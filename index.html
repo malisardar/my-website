@@ -533,6 +533,10 @@
     <!-- wrapper end -->
 
     <script defer>
+        btnNavEl.addEventListener("click", function () {
+            headerEl.classList.toggle("nav-open");
+        });
+        ////smooth scrolling animation
         const allLinks = document.querySelectorAll("a:link");
         allLinks.forEach(function (link) {
             link.addEventListener("click", function (e) {
