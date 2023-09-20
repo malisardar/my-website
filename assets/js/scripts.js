@@ -310,3 +310,8 @@ Table Of Contents end
 
 
 })(jQuery);
+
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
