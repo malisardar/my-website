@@ -656,7 +656,7 @@ scrollbar
 }
 
 ::-webkit-scrollbar {
-  display: none;
+
 }
 
 /* -------------------------------------------
@@ -870,7 +870,7 @@ frame
   pointer-events: all;
   height: 90px;
   width: auto;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateX(90px) rotate(-90deg);
           transform: translateX(90px) rotate(-90deg);
   border: solid 1px rgb(54, 55, 58);
@@ -974,7 +974,7 @@ frame
 }
 .mil-navigation nav ul li.mil-has-children ul {
   pointer-events: all;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: -30px;
   top: 57px;
@@ -1009,7 +1009,7 @@ frame
     position: absolute;
     top: 90px;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
     -webkit-transform: translateX(0) !important;
             transform: translateX(0) !important;
@@ -1631,7 +1631,7 @@ skills
   background-color: #9562d7;
 }
 .mil-line-progress .mil-bar:before {
-  opacity: 0;
+  opacity: 1;
   content: attr(data-value);
   position: absolute;
   top: -52px;
@@ -1722,7 +1722,7 @@ blog
   position: absolute;
   top: 15px;
   right: 15px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -1973,7 +1973,7 @@ subscribe form
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
-  opacity: 0.6;
+  opacity: 1.6;
 }
 .mil-subscribe-form input::-moz-placeholder {
   font-family: "Outfit", sans-serif;
@@ -1981,7 +1981,7 @@ subscribe form
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
-  opacity: 0.6;
+  opacity: 1.6;
 }
 .mil-subscribe-form input:-ms-input-placeholder {
   font-family: "Outfit", sans-serif;
@@ -1989,7 +1989,7 @@ subscribe form
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
-  opacity: 0.6;
+  opacity: 1.6;
 }
 .mil-subscribe-form input::-ms-input-placeholder {
   font-family: "Outfit", sans-serif;
@@ -1997,7 +1997,7 @@ subscribe form
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
-  opacity: 0.6;
+  opacity: 1.6;
 }
 .mil-subscribe-form input::placeholder {
   font-family: "Outfit", sans-serif;
@@ -2005,7 +2005,7 @@ subscribe form
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
-  opacity: 0.6;
+  opacity: 1.6;
 }
 .mil-subscribe-form input:focus {
   outline: inherit;
@@ -2068,7 +2068,7 @@ breadcrumbs
   cursor: not-allowed;
 }
 .mil-breadcrumbs li:last-child a {
-  opacity: 0.4;
+  opacity: 1.4;
   pointer-events: none;
 }
 .mil-breadcrumbs li:last-child:after {
@@ -2649,7 +2649,7 @@ prices
   margin-bottom: 15px;
 }
 .mil-price-card ul li.mil-empty {
-  opacity: 0.3;
+  opacity: 1.3;
 }
 
 /* -------------------------------------------
@@ -2804,7 +2804,7 @@ page transitions
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
 }
@@ -2825,12 +2825,12 @@ html.is-animating .transition-fade {
 }
 
 html.is-animating .mil-banner-frame .mil-banner-person {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: scale(0.95) translateY(30px);
           transform: scale(0.95) translateY(30px);
 }
 html.is-animating .mil-banner-frame .mil-banner-bg {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -2839,7 +2839,7 @@ html.is-animating .mil-banner-frame .mil-banner-bg {
   width: 4px;
 }
 .mil-fw-page .mil-banner-bg {
-  opacity: 0;
+  opacity: 1;
 }
 .mil-fw-page .mil-back-to-top {
   opacity: 1;
@@ -2847,7 +2847,7 @@ html.is-animating .mil-banner-frame .mil-banner-bg {
           transform: translateX(0) rotate(-90deg);
 }
 .mil-fw-page.mil-100-page .mil-back-to-top {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateX(90px) rotate(-90deg);
           transform: translateX(90px) rotate(-90deg);
 }
@@ -2871,13 +2871,13 @@ html.is-animating .mil-right-banner {
 .mil-fw-page .mil-flying-skills div {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  opacity: 0;
+  opacity: 1;
 }
 
 html.is-animating .mil-flying-skills div {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   -webkit-transition-delay: 0s;
@@ -2891,14 +2891,14 @@ html.is-changing .mil-progress {
   html.is-changing .mil-navigation {
     -webkit-transform: translateY(10px) scale(0.98) !important;
             transform: translateY(10px) scale(0.98) !important;
-    opacity: 0 !important;
+    opacity: 1 !important;
     pointer-events: none;
   }
 }
 html.is-changing .mil-has-children ul {
   -webkit-transform: translateY(10px) scale(0.98) !important;
           transform: translateY(10px) scale(0.98) !important;
-  opacity: 0 !important;
+  opacity: 1 !important;
 }
 
 .mil-menu-transition {
@@ -2918,7 +2918,7 @@ html.is-changing .mil-has-children ul {
 }
 
 html.is-animating .mil-menu-transition {
-  opacity: 0.9999;
+  opacity: 1.9999;
 }
 html.is-animating .mil-menu-transition ul li.mil-active a:before {
   -webkit-transform: scale(0);

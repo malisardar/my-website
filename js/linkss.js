@@ -1,75 +1,81 @@
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+// Open a new tab with a specified URL
+function github() {
+  var url = "https://github.com/malisardar"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+// Open a new tab with a specified URL
+function linkedin() {
+  var url = "https://www.linkedin.com/in/muhammad-ali-sardar"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+// Open a new tab with a specified URL
+function insta() {
+  var url = "https://www.instagram.com/malisardaar/"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+// Open a new tab with a specified URL
+function youtube() {
+  var url = "https://www.youtube.com/channel/UCAiTFOzwOWX-_O19mZ5O1nw"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+function mail() {
+  var url = "mailto:linkwith.alisardar@gmail.com"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
 
 
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-
-const allLinks = document.querySelectorAll("a:link");
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    if (href !== "#" && href.startsWith("#")) {
-      const href = link.getAttribute("href");
-
-      ///scroll back to top
-      if (href === "#")
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-
-      //scroll to other links
-      if (href !== "#" && href.startsWith("#")) {
-        const sectionEl = document.querySelector(href);
-        sectionEl.scrollIntoView({ behavior: "smooth" });
-      }
-      ////close mobile navigation
-      if (link.classList.contains("main-nav-link"))
-        headerEl.classList.toggle("nav-open");
-    }
-  });
-});
-
-const sectionHeroEl = document.querySelector(".section-hero");
-
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
-
-    if (ent.isIntersecting === false) {
-      document.body.classList.add("sticky");
-    }
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    root: null,
-    threshold: 0,
-    rootMargin: "-60px",
-  }
-);
-obs.observe(sectionHeroEl);
 
 
-function checkFlexGap() {
-  var flex = document.createElement("div");
-  flex.style.display = "flex";
-  flex.style.flexDirection = "column";
-  flex.style.rowGap = "1px";
-
-  flex.appendChild(document.createElement("div"));
-  flex.appendChild(document.createElement("div"));
-
-  document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1;
-  flex.parentNode.removeChild(flex);
-  console.log(isSupported);
-
-  if (!isSupported) document.body.classList.add("no-flexbox-gap");
-}
-checkFlexGap();
 
 
+
+
+
+
+
+
+// Open a new tab with a specified URL
+function p1() {
+  var url = "https://professionalessaywriting.co.uk"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+// Open a new tab with a specified URL
+function p2() {
+  var url = "https://www.simrobotics.com"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+// Open a new tab with a specified URL
+function p3() {
+  var url = "https://redhooddispatch.com"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+// Open a new tab with a specified URL
+function p4() {
+  var url = "https://gulfwebdevelopers.com"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+function p5() {
+  var url = "https://www.gameinstitute.com"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+function p6() {
+  var url = "https://squadkicks.com"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+function p7() {
+  var url = "https://injurysnapwebwp.azurewebsites.net"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
+
+function p8() {
+  var url = "https://cruzpainting.ca"; // Replace with the URL you want to open
+  window.open(url, '_blank');
+};
